@@ -6,7 +6,7 @@ package Homework5;
 public class Task18 {
 
     public static void main(String[] args) {
-        String string = "This sentence has . , - : ; ? !"; 
+        String string = "This sentence has . , - : ; ? !";
         String symbols = ".,-;:?!";
         int count = 0;
         for (int i = 0; i < string.length(); i++) {
