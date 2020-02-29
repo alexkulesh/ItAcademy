@@ -7,18 +7,17 @@ package Homework5;
 public class Task19 {
 
     public static void main(String[] args) {
-        String str = "You should counter here six words. So, let the task be a little harder.";
+        String text = "You should counter here six words. So, let the task be a little harder.";
         String symbols = " .,-;:?!";
-        char symbol;
         int wordCount = 0;
-        for (int i = 0; i < str.length(); i++) {
-            symbol = str.charAt(i);
-            if (i == str.length() - 1) {
-                break;
-            }
-            if (symbol >= 'A' && symbol <= 'z') {
-                for (int j = 0; j < symbols.length(); j++) {
-                    if (str.charAt(i + 1) == symbols.charAt(j)) {
+        for (int i = 0; i < text.length(); i++) {
+            if (text.charAt(i) >= 'A' && text.charAt(i) <= 'z') { //If there are letters in that position, then...
+                if (i == text.length() - 1) {                     //Finds out if that is the last symbol in the string.
+                    wordCount++;
+                    break;
+                }
+                for (int j = 0; j < symbols.length(); j++) {      //Finds out if that is the last letter in a word.
+                    if (text.charAt(i + 1) == symbols.charAt(j)) {
                         wordCount++;
                     }
                 }
@@ -26,5 +25,4 @@ public class Task19 {
         }
         System.out.println(wordCount);
     }
-
 }
