@@ -1,4 +1,4 @@
-package Homework5;
+package homework5;
 
 /**
  * Task 18. You have the string with text. Find all punctuation marks and count them.
