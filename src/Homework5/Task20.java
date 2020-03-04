@@ -1,4 +1,4 @@
-package Homework5;
+package homework5;
 
 /**
  * Task 20. You have the string with text. Print a text with last letters of
