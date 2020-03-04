@@ -1,4 +1,4 @@
-package Homework6.Task22;
+package homework6.task22;
 
 /**
  * Task 22. Create a class and objects that describe a period of time.
