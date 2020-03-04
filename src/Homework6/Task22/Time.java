@@ -1,4 +1,4 @@
-package Homework6.Task22;
+package homework6.task22;
 
 
 public class Time{
