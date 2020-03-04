@@ -1,4 +1,4 @@
-package Homework5;
+package homework5;
 
 /**
  * Task 19. You have the string with text. Count a number of words in the text.
