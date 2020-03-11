@@ -8,10 +8,10 @@ package homework9.task24;
 public class Main {
     public static void main(String[] args) {
         final Kettle kettle = new Kettle("metal");
-        final CoffeeMachine coffeeMachine = new CoffeeMachine(2, 10);
-        kettle.setWaterVolume(2);
+        final CoffeeMachine coffeeMachine = new CoffeeMachine(2, "10 bars");
+        kettle.setWaterVolume("2 liters");
         kettle.setWaterTemperature(90);
-        coffeeMachine.setWaterVolume(1);
+        coffeeMachine.setWaterVolume("1 liter");
         coffeeMachine.setWaterTemperature(100);
         System.out.println(kettle.toString());
         System.out.println(coffeeMachine.toString());
