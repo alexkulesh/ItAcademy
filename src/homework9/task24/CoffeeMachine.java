@@ -2,15 +2,15 @@ package homework9.task24;
 
 public class CoffeeMachine extends AppForDrinks {
     private int cupNumber;
-    private int workPressure;
+    private String workPressure;
 
-    public CoffeeMachine(int waterVolume, int waterTemperature, int cupNumber, int workPressure) {
+    public CoffeeMachine(String waterVolume, int waterTemperature, int cupNumber, String workPressure) {
         super(waterVolume, waterTemperature);
         this.cupNumber = cupNumber;
         this.workPressure = workPressure;
     }
 
-    public CoffeeMachine(int cupNumber, int workPressure) {
+    public CoffeeMachine(int cupNumber, String workPressure) {
         this.cupNumber = cupNumber;
         this.workPressure = workPressure;
     }
@@ -23,16 +23,16 @@ public class CoffeeMachine extends AppForDrinks {
         this.cupNumber = cupNumber;
     }
 
-    public int getWorkPressure() {
+    public String getWorkPressure() {
         return workPressure;
     }
 
-    public void setWorkPressure(int workPressure) {
+    public void setWorkPressure(String workPressure) {
         this.workPressure = workPressure;
     }
 
     @Override
-    public void setWaterVolume(int waterVolume) {
+    public void setWaterVolume(String waterVolume) {
         super.setWaterVolume(waterVolume);
     }
 
