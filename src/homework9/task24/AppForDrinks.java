@@ -1,10 +1,10 @@
 package homework9.task24;
 
 public abstract class AppForDrinks implements Appliance {
-    int waterVolume;
+    String waterVolume;
     int waterTemperature;
 
-    public AppForDrinks(int waterVolume, int waterTemperature) {
+    public AppForDrinks(String waterVolume, int waterTemperature) {
         this.waterVolume = waterVolume;
         this.waterTemperature = waterTemperature;
     }
@@ -12,11 +12,11 @@ public abstract class AppForDrinks implements Appliance {
     public AppForDrinks() {
     }
 
-    public int getWaterVolume() {
+    public String getWaterVolume() {
         return waterVolume;
     }
 
-    public void setWaterVolume(int waterVolume) {
+    public void setWaterVolume(String waterVolume) {
         this.waterVolume = waterVolume;
     }
 
