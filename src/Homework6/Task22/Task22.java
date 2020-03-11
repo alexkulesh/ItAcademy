@@ -8,17 +8,16 @@ package homework6.task22;
  * to compareTo in strings). Create two constructors: receiving the total
  * number of seconds, and hours, minutes and seconds separately. Make
  * a method for outputting data. Other at your discretion.
- *
  */
 public class Task22 {
 
     public static void main(String[] args) {
-          Time t1 = new Time(111);
-          Time t2 = new Time(22,22,22);
-          Time.printTime(t1);
-          Time.printTime(t2);
-          Time.compareTime(t1,t2);
-        }
+        Time t1 = new Time(111);
+        Time t2 = new Time(22, 22, 22);
+        Time.printTime(t1);
+        Time.printTime(t2);
+        Time.compareTime(t1, t2);
+    }
 }
 
 
