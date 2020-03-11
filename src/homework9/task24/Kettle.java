@@ -3,7 +3,7 @@ package homework9.task24;
 public class Kettle extends AppForDrinks {
     private String material;
 
-    public Kettle(int waterVolume, int waterTemperature, String material) {
+    public Kettle(String waterVolume, int waterTemperature, String material) {
         super(waterVolume, waterTemperature);
         this.material = material;
     }
@@ -21,7 +21,7 @@ public class Kettle extends AppForDrinks {
     }
 
     @Override
-    public void setWaterVolume(int waterVolume) {
+    public void setWaterVolume(String waterVolume) {
         super.setWaterVolume(waterVolume);
     }
 
