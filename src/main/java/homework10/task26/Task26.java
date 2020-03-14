@@ -17,7 +17,7 @@ public class Task26 {
         }
         List<Integer> goodGrades = getList(listOfPupils);
         System.out.println(listOfPupils.toString());
-        System.out.println(goodGrades);
+        System.out.println(goodGrades.toString());
     }
     private static List<Integer> getList(List<Integer> goodGrades){
         final List<Integer> newList = new ArrayList<>(goodGrades);
