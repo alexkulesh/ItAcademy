@@ -1,7 +1,6 @@
 package main.java.homework10.task27;
 
 import java.util.ArrayList;
-
 import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
