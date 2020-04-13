@@ -1,4 +1,4 @@
-package main.java.homework13.task32;
+package homework13.task32;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -18,7 +18,8 @@ public class Task32 {
         try {
             dataOutputStream = new DataOutputStream(new BufferedOutputStream(new FileOutputStream("C:\\Users\\USER\\Desktop\\binary.dat")));
             DataOutputStream finalDataOutputStream = dataOutputStream;
-            random.ints(20, 0, 10)
+            random.ints(10,0, 10)
+                    .boxed()
                     .forEach(i -> {
                         try {
                             finalDataOutputStream.writeInt(i);
@@ -33,7 +34,6 @@ public class Task32 {
         } catch (IOException ex) {
             System.out.println("There is IOException");
         }
-
         DataInputStream dataInputStream = null;
         try{
             dataInputStream = new DataInputStream(new BufferedInputStream(new FileInputStream("C:\\Users\\USER\\Desktop\\binary.dat")));
@@ -66,7 +66,7 @@ public class Task32 {
        double average = numbers.stream()
                 .mapToInt(e -> e)
                 .average()
-                .orElse(Double.NaN);
+                .getAsDouble();
         System.out.println(numbers.toString());
         System.out.println("Average = " + average);
     }

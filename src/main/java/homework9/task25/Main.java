@@ -1,4 +1,4 @@
-package main.java.homework9.task25;
+package homework9.task25;
 
 /**
  * Task 25. Create hierarchy of classes describing bank cards.

@@ -1,4 +1,4 @@
-package main.java.homework9.task24;
+package homework9.task24;
 
 public abstract class AppForCooking implements Appliance {
     int cookingTemp;

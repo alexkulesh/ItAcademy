@@ -1,4 +1,4 @@
-package main.java.homework9.task25;
+package homework9.task25;
 
 public class DebitCard extends Card {
     private String amountOfMoney;

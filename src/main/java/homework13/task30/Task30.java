@@ -1,4 +1,4 @@
-package main.java.homework13.task30;
+package homework13.task30;
 
 import java.io.BufferedReader;
 import java.io.File;

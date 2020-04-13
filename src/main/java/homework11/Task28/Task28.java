@@ -1,4 +1,4 @@
-package main.java.homework11.Task28;
+package homework11.Task28;
 
 import java.util.*;
 import java.util.stream.Collectors;

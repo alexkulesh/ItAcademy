@@ -1,4 +1,4 @@
-package main.java.homework9.task25;
+package homework9.task25;
 
 public class CreditCard extends Card {
     private String gracePeriod;

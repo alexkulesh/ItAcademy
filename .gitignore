@@ -1,3 +1,10 @@
-# Default ignored files
+# Ignored files
 workspace.xml
 *.class
+.idea/
+.vscode/
+native-libs/
+*.iws
+*.iml
+/out/
+target/

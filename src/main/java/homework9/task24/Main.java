@@ -1,4 +1,4 @@
-package main.java.homework9.task24;
+package homework9.task24;
 
 /**
  * Task 24. Create a hierarchy of classes describing household appliances.

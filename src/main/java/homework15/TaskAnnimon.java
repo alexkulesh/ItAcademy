@@ -1,4 +1,4 @@
-package main.java.homework15;
+package homework15;
 
 import java.io.*;
 import java.util.*;

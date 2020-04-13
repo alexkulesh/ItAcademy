@@ -1,4 +1,4 @@
-package main.java.homework10.task27;
+package homework10.task27;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +14,7 @@ public class Task27 {
         int capacity = 6;
         final List<Integer> numbers = new ArrayList<>(capacity);
         Random random = new Random();
-        for (int i = 0; i <= capacity; i++){
+        for (int i = 0; i <= capacity; i++) {
             numbers.add(random.nextInt(10));
         }
         System.out.println(numbers.toString());
