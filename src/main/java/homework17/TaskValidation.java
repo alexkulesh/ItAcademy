@@ -4,9 +4,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Task Validation. Провалидировать адрес электронного  кошелька, пример начало
- * всегда с букв 'E' 'D' 'R' после буквы следает 12 чисел, возможен ввод с
- * пробелами это не должно влять на нашу проверку
+ * Task Validation. Validate the e-wallet address, the beginning is always with
+ * the letters 'E' 'D' 'R' after the letter there are 12 numbers, input with spaces
+ * should not affect our verification.
  */
 
 public class TaskValidation {

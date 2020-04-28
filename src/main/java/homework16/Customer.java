@@ -5,15 +5,15 @@ import java.util.List;
 public class Customer extends Thread {
     private String customer;
     private List<String> products;
-    Cashbox cashbox;
+    Cashdesk cashdesk;
 
-    public Customer(final String customer, final List<String> products, Cashbox cashbox) {
+    public Customer(final String customer, final List<String> products, Cashdesk cashdesk) {
         this.customer = customer;
         this.products = products;
-        this.cashbox = cashbox;
+        this.cashdesk = cashdesk;
     }
 
     public void run() {
-        cashbox.print(customer, products);
+        cashdesk.print(customer, products);
     }
 }
