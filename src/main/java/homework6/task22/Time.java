@@ -2,34 +2,34 @@ package homework6.task22;
 
 
 public class Time {
-    private int hour;
-    private int minute;
     private int second;
+    private int minute;
+    private int hour;
 
-    public Time(int sec) {
-        this.second = sec;
-    }
-
-    public Time(int hour1, int min1, int sec1) {
-        this.hour = hour1;
-        this.minute = min1;
-        this.second = sec1;
-    }
-
-    public int getHour() {
-        return hour;
-    }
-
-    public void setHour(int hour) {
+    public Time(int second, int minute, int hour) {
+        if(second >= 60){
+            minute = minute + second/60;
+            second = second % 60;
+        }
+        if(minute >= 60){
+            hour = minute / 60;
+            minute = minute % 60;
+        }
+        this.second = second;
+        this.minute = minute;
         this.hour = hour;
     }
 
-    public int getMinute() {
-        return minute;
-    }
-
-    public void setMinute(int minute) {
-        this.minute = minute;
+    public Time(int second) {
+        if(second >= 60){
+            minute = minute + second/60;
+            second = second % 60;
+        }
+        if(minute >= 60){
+            hour = minute / 60;
+            minute = minute % 60;
+        }
+        this.second = second;
     }
 
     public int getSecond() {
@@ -40,23 +40,39 @@ public class Time {
         this.second = second;
     }
 
-    public int returnFullTime() {
+    public int getMinute() {
+        return minute;
+    }
+
+    public void setMinute(int minute) {
+        this.minute = minute;
+    }
+
+    public int getHour() {
+        return hour;
+    }
+
+    public void setHour(int hour) {
+        this.hour = hour;
+    }
+
+    public int allSeconds() {
         return second + minute * 60 + hour * 3600;
     }
 
-    public static void printTime(Time First) {
-        System.out.println(First.returnFullTime() + " second(-s)");
+    public static void compareTime(Time time, Time time1) {
+        if(time.allSeconds() > time1.allSeconds()){
+            System.out.println("First time period is bigger than second");
+        }
+        if(time1.allSeconds() > time.allSeconds()){
+            System.out.println("First time period is smaller than second");
+        }
+        if(time.allSeconds() == time1.allSeconds()){
+            System.out.println("First time period equals second");
+        }
     }
-
-    public static void compareTime(Time First, Time Second) {
-        if (First.returnFullTime() > Second.returnFullTime()) {
-            System.out.println("First time > Second time");
-        }
-        if (First.returnFullTime() == Second.returnFullTime()) {
-            System.out.println("First time = Second time");
-        }
-        if (First.returnFullTime() < Second.returnFullTime()) {
-            System.out.println("Second time > First time");
-        }
+    public void printTime(){
+        System.out.println("Time period in seconds - "  + allSeconds() + " second.");
+        System.out.println("Time period displayed in hours, minutes and seconds - "  + getHour() + " hour " + getMinute() + " minute " + getSecond() + " second." );
     }
 }
