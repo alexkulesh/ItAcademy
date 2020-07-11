@@ -10,7 +10,7 @@ public class Task29 {
     public static void main(String[] args) {
         HashMap<String, Integer> wordCountMap = new HashMap<String, Integer>();
         String text = "Text text class class hello hello hello hello hello";
-        String[] words = text.toLowerCase().split(" ");
+        String[] words = text.toLowerCase().split("[\\pP\\s&&[^']]+");
         for (String word : words) {
             if (!wordCountMap.containsKey(word)) {
                 wordCountMap.put(word, 0);
